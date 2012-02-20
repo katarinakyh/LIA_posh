@@ -36,27 +36,18 @@
 					<div id="socialmedia"> </div>
 				</header>		
 				<section id="mediaclips">
-					<div class="mediagroup" id="group1">
-						<div id="media1"> </div>
-						<div id="media2"> </div>
-						<div id="media3"> </div>
-					</div>
-					<div class="mediagroup" id="group2">
-						<div id="media4"> </div>
-						<div id="media5"> </div>
-						<div id="media6"> </div>
-					</div>
-					<div class="mediagroup" id="group3">
-						<div id="media7"> </div>
-						<div id="media8"> </div>
-						<div id="media9"> </div>
-					</div>
+					<div> </div>
+					<div> </div>
+					<div> </div>
+					<div> </div>
+					<div> </div>
+					<div> </div>
+					<div> </div>
+					<div> </div>
+					<div> </div>
 				</section>
 				
 				<section id="content">
-					<div id="content1"> </div>
-					<div id="content1"> </div>
-					<div id="content1"> </div>
 					<div id="logoimage"> </div>					
 				</section>
 
@@ -67,15 +58,13 @@
 				</section>
 		
 			</div><!-- #main -->
-
-			<footer>
-				<p>&copy; <?php echo date('Y'); ?> POSH INDUSTRIES LTD.</p> 
-			</footer>		
+			<div id="footer">
+				<footer>
+					<p>&copy; <?php echo date('Y'); ?> POSH INDUSTRIES LTD.</p> 
+				</footer>
+			</div>
+					
 		</div><!-- #wrap -->
-		
-		<div id="footer">
-			STICKY!
-		</div><!-- #footer -->
 	  	<script type="text/javascript" src="<?php echo bloginfo('template_url'); ?>/js/jquery.js"></script>
 		<script src="<?php echo bloginfo('template_url'); ?>/js/less-1.2.1.min.js" type="text/javascript"></script>
 	  	<!--[if lte IE 8]>
