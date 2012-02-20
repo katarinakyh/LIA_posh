@@ -1,3 +1,44 @@
+@width: 960px;
+@mediawidth: 256px;
+@mediaheight: 178px;
+
+#wrap{
+  background-image: img/;
+  width: 100%;
+}
+
+#main{
+  width: @width;
+}
+
+header{
+  height: 200px;
+  width: @width;
+}
+
+#mediaclips{
+  width: @width;
+}
+
+.mediagroup{
+  width: @width;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+.mediagroup div{
+  background: #000;
+  border: solid 7px #fff;
+  border-radius: 10px;
+  width: @mediawidth;
+  height: @mediaheight;
+  margin-left: 24px;
+  margin-right: 24px;
+
+}
+
+
+
+
 
 /*===[ STICKY FOOTER ]===============================*/
 
@@ -29,11 +70,11 @@ html, body {
 
 /*Opera Fix*/
 body:before {
-content:"";
-height:100%;
-float:left;
-width:0;
-margin-top:-32767px;
+  content:"";
+  height:100%;
+  float:left;
+  width:0;
+  margin-top:-32767px;
 }
 
 /* ---[ IMPORTANT ]--- Include this style in the <head> of your HTML ---
