@@ -1,16 +1,15 @@
+@font-face { font-family: Delicious; src: url('Delicious-Roman.otf'); } 
 @width: 960px;
-@mediawidth: 256px;
-@mediaheight: 178px;
+@mediawidth: 270px;
+@mediaheight: 192px;
+@mediawidthinner: 256px;
+@mediaheightinner: 178px;
 @borderradius:10px;
 
 .mediaborder{
-  border: solid 7px #fff;
-  border-image: url('img/border.png') 27 27 27 27 round round;
+  border: 7px solid rgba(255, 255, 255, .5);
   border-radius: @borderradius;
   box-shadow: 0 3px 4px #000;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
-  
 }
   
 body{
@@ -39,13 +38,19 @@ header{
   width: @width;
 }
 
-#mediaclips div{
-  .mediaborder;
-  background: #000;
+#mediaclips .border {
+  background: url('img/mediaclips_border_bg.png');
+  border-radius: @borderradius;
   float: left;
+  margin: 0 17px 32px 17px;
+  padding: 7px;
+}
+
+.border .img {
+  background: #000;
   width: @mediawidth;
   height: @mediaheight;
-  margin: 0 24px 32px 24px;
+  
 }
 
 #content{

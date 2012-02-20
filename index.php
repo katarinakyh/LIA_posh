@@ -36,15 +36,15 @@
 					<div id="socialmedia"> </div>
 				</header>		
 				<section id="mediaclips">
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
+					<div class="border"> <div class="img"> </div> </div>
+					<div class="border"> <div class="img"> </div> </div>
+					<div class="border"> <div class="img"> </div> </div>
+					<div class="border"> <div class="img"> </div> </div>
+					<div class="border"> <div class="img"> </div> </div>
+					<div class="border"> <div class="img"> </div> </div>
+					<div class="border"> <div class="img"> </div> </div>
+					<div class="border"> <div class="img"> </div> </div>
+					<div class="border"> <div class="img"> </div> </div>
 				</section>
 				
 				<section id="content">
