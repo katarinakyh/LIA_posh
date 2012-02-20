@@ -28,7 +28,7 @@
 	<body>
 	
 		<div id="wrap">
-		
+			<div id="content-top"></div>		
 			<div id="main">
 				<header>
 					<div id="logo"> <h2> POSH <br /> INDUSTRIES </h2></div>
@@ -48,6 +48,7 @@
 				</section>
 				
 				<section id="content">
+					<p>Posh makes cool, advanced and interactive things for events, trade fairs and showrooms using multitouch screens, back projections, 3D, other rich media technologies and high-tech hardware. But the specific technology is not really a limitation, we love a technical challenge and outrageous, impossible ideas. That's when great things come alive! There should be no creative limits to things such as games, presentations and visualizations. We simply refuse to work with static, boring roll-ups, plain walls and brochure stands. Our mission is to create cool and spectacular events to make our customer the center of attention, for our customer to rock the socks off their clients and competitors. Check out some of the showcase videos first, and if you like what you see, let's talk creative ideas and business! We're going to make you an offer you can't refuse.</p>
 					<div id="logoimage"> </div>					
 				</section>
 

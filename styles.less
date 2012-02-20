@@ -1,4 +1,4 @@
-@font-face { font-family: Delicious; src: url('Delicious-Roman.otf'); } 
+@font-face { font-family: Delicious; src: url('../fonts/Neutra.otf'); } 
 @width: 960px;
 @mediawidth: 270px;
 @mediaheight: 192px;
@@ -35,12 +35,14 @@ header{
 }
 
 #mediaclips{
+  float:left;
   width: @width;
 }
 
 #mediaclips .border {
   background: url('img/mediaclips_border_bg.png');
   border-radius: @borderradius;
+  box-shadow: 0 2px 4px #555;
   float: left;
   margin: 0 17px 32px 17px;
   padding: 7px;
@@ -53,10 +55,24 @@ header{
   
 }
 
+#content-top{
+  background-image:url('img/content_top.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  position:absolute;
+  top: 959px;
+  width: 100%;
+  height: 75px;
+  
+}
+
 #content{
+  float:left;
+  background: url('img/content_bg.png');
   width: @width;
   column-count: 3;
   column-width: 246px;
+  margin-top: 75px;
 }
 
 #footer{
