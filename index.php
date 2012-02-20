@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html>
-<meta charset="utf-8" />
+	<meta charset="utf-8" />
 <head>
 
   	<title>HTML5-PHP MALL</title>
@@ -10,9 +10,11 @@
   	<meta name="description" content="" />
  
 	<link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/style.css" type="text/css" media="screen" />
-	<link rel="shortcut icon" href="img/design/favicon.png" />
-  	<link rel="apple-touch-icon" sizes="72x72" href="img/design/apple_touch_57px.png" />
-  	<link rel="apple-touch-icon" sizes="114x114" href="img/design/apple_touch_114px.png" />
+	<link rel="stylesheet/less" href="<?php echo bloginfo('template_url'); ?>/styles.less" type="text/css" media="screen" />
+	
+	<link rel="shortcut icon" href="img/favicon.png" />
+  	<link rel="apple-touch-icon" sizes="72x72" href="img/apple_touch_57px.png" />
+  	<link rel="apple-touch-icon" sizes="114x114" href="img/apple_touch_114px.png" />
   	
   	<!--[if lte IE 8]>
   	<script type="text/javascript" src="js/html5.js"></script>
@@ -33,14 +35,26 @@
 		<div id="wrap">
 		
 			<div id="main">
-		
-				<nav>
-			    	<ul>
-			    		<li><a href="#">Menu item1</a></li>
-			    		<li><a href="#">Menu item2</a></li>
-			    		<li><a href="#">Menu item3</a></li>
-			    	</ul>  
-		    	</nav>
+				<header>
+					<div id="logo"> <h2></h>POSH <br /> INDUSTRIES </h2></div>
+					<div id="office"> </div>
+					<div id="socialmedia"> </div>
+				</header>		
+				<section id="mediaclips">
+					<div id="media1"> </div>
+					<div id="media2"> </div>
+					<div id="media3"> </div>
+				
+					<div id="media4"> </div>
+					<div id="media5"> </div>
+					<div id="media6"> </div>
+				
+					<div id="media7"> </div>
+					<div id="media8"> </div>
+					<div id="media9"> </div>
+				
+				</section>
+				
 		
 			</div><!-- #main -->
 		
@@ -50,5 +64,6 @@
 			STICKY!
 		</div><!-- #footer -->
 		
+<script src="<?php echo bloginfo('template_url'); ?>/js/less-1.2.1.min.js" type="text/javascript"></script>
 	</body>
 </html>
