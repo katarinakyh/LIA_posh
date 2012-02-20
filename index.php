@@ -26,27 +26,27 @@
   	
   	</head>
 
-<body>
-
-<div id="wrap">
-
-	<div id="main">
-
-		<nav>
-	    	<ul>
-	    		<li><a href="#">Menu item1</a></li>
-	    		<li><a href="#">Menu item2</a></li>
-	    		<li><a href="#">Menu item3</a></li>
-	    	</ul>  
-    	</nav>
-
-	</div><!-- #main -->
-
-</div><!-- #wrap -->
-
-<div id="footer">
-	STICKY!
-</div><!-- #footer -->
-
-</body>
+	<body>
+	
+		<div id="wrap">
+		
+			<div id="main">
+		
+				<nav>
+			    	<ul>
+			    		<li><a href="#">Menu item1</a></li>
+			    		<li><a href="#">Menu item2</a></li>
+			    		<li><a href="#">Menu item3</a></li>
+			    	</ul>  
+		    	</nav>
+		
+			</div><!-- #main -->
+		
+		</div><!-- #wrap -->
+		
+		<div id="footer">
+			STICKY!
+		</div><!-- #footer -->
+		
+	</body>
 </html>
