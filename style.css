@@ -6,7 +6,14 @@ Version: 1.0
 Author: Schierbeck & Liedner
 Author URI: http://schilie.se
 */
-/*
+/*------------------------------------------------
+
+ *Filename				style.css
+ *Version				1.0 (2011-10-20)
+ *Website				http://schilie.se
+ *Author				Johan Schierbeck
+ 
+ 
 ===STRUCTURE======================================
 
  *Page width			960px
@@ -16,567 +23,160 @@ Author URI: http://schilie.se
  *Sticky footer			
 
 ------------------------------------------------*/
+
 /* --- HTML5 RESET --- */
-html,
-body,
-div,
-span,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
 }
+
 body {
-  line-height: 1;
+    line-height:1;
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
 }
+
 nav ul {
-  list-style: none;
+    list-style:none;
 }
+
 blockquote, q {
-  quotes: none;
+    quotes:none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
 }
+
 a {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
 }
+
 /* change colours to suit your needs */
 ins {
-  background-color: #ff9;
-  color: #000;
-  text-decoration: none;
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
 }
+
 /* change colours to suit your needs */
 mark {
-  background-color: #ff9;
-  color: #000;
-  font-style: italic;
-  font-weight: bold;
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
 }
+
 del {
-  text-decoration: line-through;
+    text-decoration: line-through;
 }
+
 abbr[title], dfn[title] {
-  border-bottom: 1px dotted;
-  cursor: help;
+    border-bottom:1px dotted;
+    cursor:help;
 }
+
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse:collapse;
+    border-spacing:0;
 }
+
 /* change border colour to suit your needs */
 hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #cccccc;
-  margin: 1em 0;
-  padding: 0;
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
 }
+
 input, select {
-  vertical-align: middle;
-}
-/* === End of restet === */
-.aktuellt {
-  position: absolute;
-  top: 560px;
-  height: 119px;
-  width: 190px;
-  padding: 40px 25px;
-  background: url('img/bg-aktuellt2.png');
+    vertical-align:middle;
 }
 
-.aktuellt ul li {
-	list-style: none;
-	margin-bottom: 20px;
-}
+/*===[ NAV ]=========================================*/
 
-.aktuellt ul li a {
-	font-family: Georgia, Times, serif;
-	font-size: 16px;
-	font-style: italic;
-	margin-bottom: 15px;
-	color: #aaa;
-	text-shadow: 0 1px 0 #000;
-	-webkit-text-shadow: 0 1px 0 #000;
-	-moz-text-shadow: 0 1px 0 #000;
-	text-decoration: none;
-}
-
-.aktuellt li a:hover {
-	color: #888;
-}
-
-@font-face {
-  font-family: 'FertigoProRegular';
-  src: url('fonts/fertigo_pro-webfont.eot');
-  src: url('fonts/fertigo_pro-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/fertigo_pro-webfont.woff') format('woff'), url('fonts/fertigo_pro-webfont.ttf') format('truetype'), url('fonts/fertigo_pro-webfont.svg#FertigoProRegular') format('svg');
-  font-weight: lighter;
-  font-style: normal;
-}
-.logo {
-  float: left;
-  margin-top: 77px;
-  margin: 77px 630px 50px 0;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'FertigoProRegular', Georgia, serif;
-  font-weight: lighter;
-  color: #ff518c;
-  text-shadow: 0 1px 0 #000;
-}
-h1 {
-  color: #fff;
-  font-size: 24px;
-  text-shadow: 0 2px 0 #3e1700;
-  margin-bottom: 15px;
-}
-a {
-  color: #ff518c;
-}
-section ul {
-  float: left;
-}
-section li {
-  font-family: Georgia, Times, serif;
-  margin-left: 20px;
-  color: #fff;
-  line-height: 25px;
-  font-weight: lighter;
-  text-shadow: 0 1px 0 #3e1700;
-}
-.center {
-  margin: 0 auto;
-  text-align: center;
-}
-p {
-  color: #fff;
-  font-family: Georgia, Times, serif;
-  font-size: 15px;
-  text-shadow: 0 1px 0 #000;
-  line-height: 20px;
-  margin-bottom: 15px;
-}
-h2 {
-  margin: 0 auto;
-  text-align: center;
-}
-.body_start {
-  background: url('img/bg1.jpg');
-}
-body {
-  background: #0f0804;
-}
-#wrap_img_susanne {
-  background: url('img/start-susanne.jpg');
-  width: 100%;
-  height: 100%;
-  height: 738px;
-  min-height: 738px;
-  background-position: top;
-  background-repeat: no-repeat;
-}
-#wrap_img_stefan {
-  background: url('img/start-stefan.jpg');
-  width: 100%;
-  height: 100%;
-  height: 738px;
-  min-height: 738px;
-  background-position: top;
-  background-repeat: no-repeat;
-}
-#wrap_img {
-  background: url('img/bgbild.jpg');
-  width: 100%;
-  padding-bottom: 60px;
-  min-height: 738px;
-  background-position: top;
-  background-repeat: no-repeat;
-  margin: 0 auto;
-}
-#wrap_img_start {
-  background: url('img/bg-start.jpg');
-  width: 100%;
-  height: 100%;
-  height: 738px;
-  min-height: 738px;
-  background-position: top;
-  background-repeat: no-repeat;
-}
-#wrap {
-  background-position: top;
-  /* Ta ej bort! */
-
-  background-repeat: no-repeat;
-  /* Ta ej bort! */
-
-  margin: 0 auto;
-  min-height: 738px;
-  width: 960px;
-}
-#main {
-  float: right;
-  margin: 170px 0 0 0px;
-  height: 100%;
-  width: 600px;
-  padding: 0 30px;
-}
-#main_start {
-  float: right;
-  margin: 270px 0 0 0px;
-  width: 600px;
-  padding: 0 30px;
-}
-/*===[Menu]===*/
 nav {
-  position: absolute;
-  background: #2b2b2b;
-  height: 30px;
-  width: 100%;
-  left: 0;
-  list-style: none;
-  /* --- Make it work in IE7 (1/2) --- */
-
+	
+	background: #999;
+	float: left;
+	list-style: none; /* --- Make it work in IE7 (1/2) --- */
+	width: 100%;
 }
+
 nav li {
-  display: inline;
-  /* --- Make it work in IE7 (2/2) --- */
+	display: inline; /* --- Make it work in IE7 (2/2) --- */
+}
+
+nav li a {
 
 }
-#access {
-  background: #2b2b2b;
-  display: block;
-  float: left;
-  width: 100%;
-  height: 32px;
-}
-#access ul {
-  list-style: none;
-  margin: 0 auto;
-  width: 960px;
-  padding: 0;
-}
-#access li {
-  float: left;
-  position: relative;
-  color: #fff;
-  height: 30px;
-  margin: 0;
-}
-#access li li {
-  float: left;
-  position: relative;
-  color: #fff;
-  /*height: 30px;*/
 
-  margin: 0;
-  margin-top: -2px;
-  clear: both;
-}
-#access a {
-  display: block;
-  line-height: 2em;
-  padding: 0 1em;
-  text-decoration: none;
-  color: #fff;
-  font-size: 14px;
-  padding-top: 3px;
-  padding-bottom: 1px;
-  text-transform: uppercase;
-}
-#access ul ul {
-  display: none;
-  float: left;
-  position: absolute;
-  top: 32px;
-  left: 0;
-  z-index: 99999;
-}
-#access ul ul ul {
-  float: left;
-  left: 100%;
-  top: 2px;
-}
-#access ul ul a {
-  background: #333;
-  color: #fff;
-  line-height: 1em;
-  padding: .5em .5em .5em 1em;
-  width: 15em;
-  min-width: 10em;
-  max-width: 15em;
-  height: auto;
-}
-#access li:hover > a, #access ul ul :hover > a {
-  background: #000;
-  color: #fff;
-}
-#access ul ul a:hover {
-  background: #000;
-}
-#access ul li:hover > ul {
-  display: block;
-}
-/*===[End of Menu]===*/
-/*===[Triangle Menu]===*/
-#menu {
-  float: left;
-  height: 350px;
-  width: 240px;
-  background: url('img/menu-triangle.png');
-  color: #2b2b2b;
-  text-decoration: none;
-}
-#menu li {
-  float: left;
-  width: 240px;
-  height: 50px;
-  list-style: none;
-  display: inline;
-  text-align: center;
-  margin: 0;
-}
-#menu li a {
-  text-shadow: 0 1px 0 #fff;
-  font-family: Arial, Verdana, sans-serif;
-  color: #2b2b2b;
-  font-style: normal;
-  text-decoration: none;
-  width: 240px;
-  height: 34px;
-  display: block;
-  padding-top: 16px;
-}
-#menu li:first-child {
-  height: 45px;
-  padding-top: 55px;
-}
-/*===[End of Triangle Menu]===*/
-.knapp {
-  margin: 0 auto;
-  text-align: center;
-  padding: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  color: #ffffff;
-  padding: 10px 20px;
-  background: -moz-linear-gradient(top, #7abaff 0%, #158cdb);
-  background: -webkit-gradient(linear, left top, left bottom, from(#7abaff), to(#158cdb));
-  border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -khtml-border-radius: 4px;
-  border: 1px solid #6098c9;
-  -moz-box-shadow: 0px 3px 0px #4072a8, inset 0px 0px 0px #ffffff;
-  -webkit-box-shadow: 0px 3px 0px #4072a8, inset 0px 0px 0px #ffffff;
-  text-shadow: 0px 1px 0px rgba(16, 47, 71, 0.6), 0px 0px 0px #ffffff;
-}
-.knapp:hover {
-  background: -moz-linear-gradient(top, #158cdb 0%, #7abaff);
-  background: -webkit-gradient(linear, left top, left bottom, from(#158cdb), to(#7abaff));
-}
-.button {
-  margin: 0 auto;
-  text-align: center;
-  padding: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  color: #ffffff;
-  padding: 10px 20px;
-  background: -moz-linear-gradient(top, #7abaff 0%, #158cdb);
-  background: -webkit-gradient(linear, left top, left bottom, from(#7abaff), to(#158cdb));
-  border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -khtml-border-radius: 4px;
-  border: 1px solid #6098c9;
-  -moz-box-shadow: 0px 3px 0px #4072a8, inset 0px 0px 0px #ffffff;
-  -webkit-box-shadow: 0px 3px 0px #4072a8, inset 0px 0px 0px #ffffff;
-  text-shadow: 0px 1px 0px rgba(16, 47, 71, 0.6), 0px 0px 0px #ffffff;
-}
-body {
-  color: #000000;
-}
-#test {
-  margin: 0 auto;
-  height: 400px;
-  width: 960px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  color: #ffffff;
-  padding: 10px 20px;
-  background: -moz-linear-gradient(top, #7abaff 0%, #158cdb);
-  background: -webkit-gradient(linear, left top, left bottom, from(#7abaff), to(#158cdb));
-  border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -khtml-border-radius: 4px;
-  border: 1px solid #6098c9;
-  -moz-box-shadow: 0px 3px 0px #4072a8, inset 0px 0px 0px #ffffff;
-  -webkit-box-shadow: 0px 3px 0px #4072a8, inset 0px 0px 0px #ffffff;
-  text-shadow: 0px 1px 0px rgba(16, 47, 71, 0.6), 0px 0px 0px #ffffff;
-}
+
 /*===[ STICKY FOOTER ]===============================*/
+
 * {
-  margin: 0;
-  padding: 0;
-}
+	margin:0;
+	padding:0;
+} 
+
 html, body {
-  height: 100%;
+	height: 100%;
 }
+
+#wrap {
+	min-height: 100%;
+}
+
 #main {
-  padding-bottom: 180px;
-  /* --- Same height (1/3) --- */
-}
-#wrap_img_start {
-  padding-bottom: 299px;
-}
-footer {
-  background: #0f0;
-  background: url('img/footer-bg.gif');
-  position: relative;
-  margin-top: 0/*-299px*/;
-  /* --- Same height (2/3) --- */
+	overflow:auto;
+	padding-bottom: 150px; /* --- Same height (1/3) --- */
+}  
 
-  height: 299px;
-  /* --- Same height (3/3) --- */
-
-  clear: both;
-  color: #5b5b5b;
-  box-shadow: 0 -1px 0px #555555;
-  border-top: 1px solid #fff;
-}
 #footer {
-  margin: 0 auto;
-  width: 960px;
-}
-address {
-  float: left;
-  height: 120px;
-  width: 300px;
-  padding: 60px 13px 0 0;
-  border-right: 1px solid #ccc;
-  box-shadow: 1px 0 0 #fff;
-  margin: 60px 30px 0 0;
-  text-align: left;
-  background: url('img/schierbeck-logo-small.png');
-  background-position: top left;
-  background-repeat: no-repeat;
-}
-address ul {
-  line-height: 18px;
-  list-style: none;
-  font-family: Georgia, Times, serif;
-  font-style: normal;
-  font-size: 14px;
-  text-shadow: 0 -1px 0 #ffffff;
-}
+	background: #0f0;
+	position: relative;
+	margin-top: -150px; /* --- Same height (2/3) --- */
+	height: 150px; /* --- Same height (3/3) --- */
+	clear:both;
+} 
+
 /*Opera Fix*/
 body:before {
-  content: "";
-  height: 100%;
-  float: left;
-  width: 0;
-  margin-top: -32767px;
+content:"";
+height:100%;
+float:left;
+width:0;
+margin-top:-32767px;
 }
+
 /* ---[ IMPORTANT ]--- Include this style in the <head> of your HTML ---
 <!--[if !IE 7]>
 	<style type="text/css">
