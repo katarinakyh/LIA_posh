@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <meta charset="utf-8" />
@@ -7,7 +9,7 @@
   
   	<meta name="description" content="" />
  
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/css/style.css" type="text/css" media="screen" />
 	<link rel="shortcut icon" href="img/design/favicon.png" />
   	<link rel="apple-touch-icon" sizes="72x72" href="img/design/apple_touch_57px.png" />
   	<link rel="apple-touch-icon" sizes="114x114" href="img/design/apple_touch_114px.png" />
