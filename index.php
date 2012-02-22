@@ -19,7 +19,7 @@
 							
 						} else {
 							
-							echo '<img src="'.get_bloginfo("template_url").'/img/bg.jpg" />';
+							echo 'Banana!';
 							
 						}
 						?>

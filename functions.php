@@ -1,4 +1,5 @@
 <?php
+
 /*
 register_nav_menus( array(
 	'primary' => __( 'Primary Menu', 'themename' ),
@@ -56,22 +57,21 @@ function excerpt_abooze($text) {
 }
 
 // Avancerade templates 	
-   	add_editor_style( '/css/editor-style.css' );
+   	add_editor_style( 'editor.css' );
    	add_filter( 'default_content', 'custom_editor_content' );
     function custom_editor_content( $content ) {
          global $current_screen;
          if ( $current_screen->post_type == 'page') {
             $content = '
-            	<div class="content-col-main">
-					Vänster kolumn: 610 pixlar bred
-					&nbsp;
-				</div>
-      
-      			<div class="content-col-side">
-      				Höger kolumn: 320 pixlar bred
-					&nbsp;
-				</div> &nbsp; &nbsp;
-
+            	<div class="column">
+            	<h2>Rubrik</h2>
+            	</div>
+            	<div class="column">
+            	<h2>Rubrik</h2>
+            	</div>
+            	<div class="column">
+            	<h2>Rubrik</h2>
+            	</div>
             ';
          }
          elseif ( $current_screen->post_type == 'POSTTYPE') {

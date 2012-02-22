@@ -28,6 +28,7 @@ a {
 h1, h2, h3, h4 {
 	color: @headercolor;
 	margin-bottom: 15px;
+	font-weight: normal;
 }
 
 h1 {
@@ -63,7 +64,6 @@ p {
 	font-size: 44px;
 	letter-spacing: 1px;
 	padding: 21px 0 0 24px;
-	font-weight: normal;
 }
 
 footer p {
@@ -166,18 +166,15 @@ header{
 
 #content-wrap #content article{
 	float: left;
-  	width: 912px;
-	padding: 30px 24px;
+  	width: 960px;
+	padding: 30px 0;
 
 }
 
-#content-wrap #content article p {
-	-moz-column-count: 3;
-	-moz-column-gap: 48px;
-	-webkit-column-count: 3;
-	-webkit-column-gap: 48px;
-	column-count: 3;
-	column-gap: 48px;
+.column {
+	float: left;
+	width: 272px;
+	margin: 0 24px;
 }
 
 #content-bottom {
