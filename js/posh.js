@@ -11,7 +11,7 @@ $('document').ready(function(){
 		var content = $(this).html();
 		console.log(content);
 		
-		$('.big').html(content).fadein();
+		$('.big').html(content).toggle();
 		$('#mediaclips').hide(); //gömmer dessvärre allt så länge .big ligger innanför den. Måste pos .big korrekt
 		
 		
