@@ -109,12 +109,19 @@ header{
 }
 
 #mediaclips .border {
+	float: left;
   	background: url('img/mediaclips_border_bg.png');
   	border-radius: @borderradius;
   	box-shadow: 0 2px 4px #555;
   	float: left;
   	margin: 0 24px 32px 24px;
   	padding: 7px;
+  	width: @mediawidthinner;
+	height: @mediaheightinner;
+	overflow: hidden;
+}
+#mediaclips .border iframe {
+	margin-bottom: 10px;
 }
 
 .border .img {

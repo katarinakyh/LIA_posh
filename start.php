@@ -18,9 +18,7 @@ Template Name: Startsida
 
 					<div class="border">
 						<?php
-						if(has_post_thumbnail()) {
-						
-							
+						if(has_post_thumbnail()) {						
 						
 							echo '<a href="';
 							the_permalink();
@@ -31,7 +29,11 @@ Template Name: Startsida
 							
 						} else {
 							
-							echo '<a href="' . the_permalink() . '"><img src="' . get_bloginfo("template_url") . '/img/bg.jpg" /></a>';
+							echo '<a href="';
+							the_permalink();
+							echo '">';
+							the_content();
+							echo '</a>';
 							
 						}
 						?>
