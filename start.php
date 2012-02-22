@@ -5,47 +5,46 @@ Template Name: Startsida
 ?>
 <?php get_header(); ?>
 				
+
 				<section id="mediaclips">
-				
-					<?php query_posts("cat=3&showposts=9"); ?>
+					<div class="big">
+					</div><!-- .big -->
 					
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			
-					
-					
+						<?php query_posts("cat=3&showposts=9"); ?>
 						
-					
+						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+	
+						<div class="border">
+							<?php
+							$i=0;
+							
+							if(has_post_thumbnail()) {						
+								$i++;
+								echo '<a class="'.$i.'" href="';
+								the_permalink();
+								echo '">';
+								the_post_thumbnail();
+								echo '</a>';
+								
+								
+							} else {
+								
+								echo '<a href="';
+								the_permalink();
+								echo '">';
+								the_content();
+								echo '</a>';
+								
+							}
+							?>
+							
+							<?php //the_title(); ?>
+							<?php //the_excerpt(); ?>
+							
+						</div><!-- .border -->
 
-					<div class="border">
-						<?php
-						if(has_post_thumbnail()) {						
-						
-							echo '<a href="';
-							the_permalink();
-							echo '">';
-							the_post_thumbnail();
-							echo '</a>';
-							
-							
-						} else {
-							
-							echo '<a href="';
-							the_permalink();
-							echo '">';
-							the_content();
-							echo '</a>';
-							
-						}
-						?>
-						
-						<?php //the_title(); ?>
-						<?php //the_excerpt(); ?>
-						
-					</div><!-- .border -->
-
-					<?php endwhile; endif; ?>
-					<?php wp_reset_query(); ?>
-									
+						<?php endwhile; endif; ?>
+						<?php wp_reset_query(); ?>
 				</section><!-- #mediaclips -->
 				
 				<div id="content-wrap">
