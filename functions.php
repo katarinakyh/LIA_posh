@@ -54,5 +54,46 @@ add_filter('the_excerpt', 'excerpt_abooze');
 function excerpt_abooze($text) {
    return str_replace('[...]', '...', $text); 
 }
+
+// Avancerade templates 	
+   	add_editor_style( '/css/editor-style.css' );
+   	add_filter( 'default_content', 'custom_editor_content' );
+    function custom_editor_content( $content ) {
+         global $current_screen;
+         if ( $current_screen->post_type == 'page') {
+            $content = '
+            	<div class="content-col-main">
+					Vänster kolumn: 610 pixlar bred
+					&nbsp;
+				</div>
+      
+      			<div class="content-col-side">
+      				Höger kolumn: 320 pixlar bred
+					&nbsp;
+				</div> &nbsp; &nbsp;
+
+            ';
+         }
+         elseif ( $current_screen->post_type == 'POSTTYPE') {
+            $content = '';
+         }
+        /* elseif ( $current_screen->post_type == 'slidedeck_add_slide') {
+            $content = '<div class="rubrik_box">
+						<h1 style="margin: -5px 0 5px;">Rubriktext</h1>
+						Kort inledande text.
+						<a style="margin-top: -15px;" href="#">Läs mer&gt;&gt;-länk (ändra så den länkar rätt!</a>
+						</div>';
+         }*/
+
+         else {
+            $content = '
+
+              
+
+            ';
+         }
+         return $content;
+       }
+
    
 ?>
