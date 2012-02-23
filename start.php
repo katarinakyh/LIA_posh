@@ -23,7 +23,7 @@ Template Name: Startsida
 							
 							if(has_post_thumbnail()) {						
 								
-								echo '<div class="show' . $n_id . '">';
+								echo '<div class="shw ' . $n_id . '">';
 								the_post_thumbnail();
 								echo '</div>';								
 								
@@ -33,7 +33,7 @@ Template Name: Startsida
 		
 						</div><!-- .border -->
 						<div style="font-size: 20px; color: #f00;"></div>
-						<div class="big<?php echo $n_id; ?>">
+						<div class="big" id="big<?php echo $n_id; ?>">
 						
 							<div class="next <?php echo $n_id; ?>"></div>
 							
