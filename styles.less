@@ -41,8 +41,7 @@ h1 {
 h2 {
 	font-size: 22px;
 	font-family: Header;
-	letter-spacing: 2px;
-	
+	letter-spacing: 2px;	
 }
 
 h3 {
@@ -50,20 +49,66 @@ h3 {
 }
 
 h4 {
-
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Brodtext;
 }
 
 p {
 	font-family: Brodtext;
 	font-size: 14px;
+	line-height: 18px;
 }
 
 #logo h1 {
+	float: left;
 	font-family: Logo;
 	color: #000;
+	height: 157px;
+	width: 292px;
 	font-size: 44px;
 	letter-spacing: 1px;
-	padding: 21px 0 0 24px;
+	margin:30px 0 0 24px;
+}
+
+#office {
+	float: left;
+	height: 157px;
+	width: 204px;
+	margin: 30px 30px 0 0;
+}
+
+#office h4 {
+	font-family: Brodtext;
+	font-size: 11px;
+	font-weight: bold;
+	margin-bottom: 86px;
+}
+
+#office p {
+	line-height: 18px;
+	font-size: 11px;
+}
+
+#socialmedia {
+	float: left;
+	height: 157px;
+	width: 381px;
+	margin: 30px 0 0;
+}
+
+#socialmedia img {
+	float: left;
+	margin: -6px 0 0 10px;
+	background: fuchsia;
+}
+
+#socialmedia h4 {
+	float: left;
+	font-family: Brodtext;
+	font-size: 11px;
+	font-weight: bold;
+	margin: 0;
 }
 
 footer p {
@@ -108,12 +153,46 @@ header{
   	width: @width;
 }
 
-.big{
-  display: none;
-  position: relative;
-  top: 0;
-  left: 0;
-  
+.big1, .big2, .big3, .big4, .big5, .big6, .big7, .big8, .big9 {
+	display: none;
+	border-radius: @borderradius;
+	height: 640px;
+	width: 906px;
+	background: black;
+	position: absolute;
+	margin-left: 24px; 
+}
+
+.big1 img, .big2 img, .big3 img, .big4 img, .big5 img, .big6 img, .big7 img, .big8 img, .big9 img {
+	border-radius: @borderradius;
+}
+
+.next {
+	position: absolute;
+	top: 270px;
+	left: 906px;
+	height: 100px;
+	width: 60px;
+	background-image: url(img/next.png);
+}
+
+.next:hover {
+	background-image: url(img/next_hover.png);
+}
+
+.prev {
+	position: absolute;
+	top: 270px;
+	left: -60px;
+	height: 100px;
+	width: 60px;
+	background-image: url(img/prev.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.prev:hover {
+	background-image: url(img/prev_hover.png);
 }
 
 #mediaclips .border {
@@ -163,8 +242,7 @@ header{
 	background-position: top;
 	background-repeat: repeat-y;
 	margin-top: 62px;
-  	/*column-count: 3;
-  	column-width: 246px;*/
+	padding-bottom: 50px;
 }
 
 #content-wrap #content {
@@ -192,8 +270,39 @@ header{
 	background: url(img/content_bottom.png);
 	background-repeat: no-repeat;
   	background-position: center;
-	display: block;
-	
+	display: block;	
+}
+
+address {
+	float: left;
+	width: 272px;
+	margin: 0 24px;
+	font-style: normal;
+}
+
+address p {
+	font-size: 12px;
+}
+
+
+#farre {
+	float: left;
+	margin: 40px 24px 0;
+	width: 200px;
+}
+
+#farre p {
+	font-size: 12px;
+}
+
+#jenni {
+	float: left;
+	margin: 40px 24px 0;
+	width: 170px;
+}
+
+#jenni p {
+	font-size: 12px;
 }
 
 #footer{

@@ -38,8 +38,18 @@
                                 
                     <div id="logo"><a href="<?php get_bloginfo ( 'url' ); ?>"><h1>POSH<br />INDUSTRIES.</h1></a></div>
                     
-                    <div id="office"></div>
+                    <div id="office">
+                    <h4>OFFICE</h4>
+                    <p>
+                    Drachmannsgatan 21<br />
+                    SE-168 49 Stockholm, Sweden<br />
+                    info@posh.se
+                    </p>
+                    </div>
                     
-                    <div id="socialmedia"></div>
+                    <div id="socialmedia">
+                    <h4>POSH ONLINE: </h4>
+                    <a href="http://www.facebook.com/PoshIndustries"><img src="<?php echo bloginfo('template_url'); ?>/img/facebook.gif"></a>
+                    </div>
                     
                 </header>

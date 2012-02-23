@@ -7,45 +7,54 @@ Template Name: Startsida
 				
 
 				<section id="mediaclips">
-					<div class="big">
-					</div><!-- .big -->
 					
-
 					<?php query_posts("cat=3&showposts=9"); ?>
 
 					<?php
+					
+						$n_id = 1;
 
-					if (have_posts()) : while (have_posts()) : the_post(); ?>
-	
+						if (have_posts()) : while (have_posts()) : the_post(); 
+					
+					?>
+										
 						<div class="border">
+						
 							<?php
 							
+							
 							if(has_post_thumbnail()) {						
-								echo '<a href="';
-								the_permalink();
-								echo '">';
+								
+								echo '<div class="show' . $n_id . '">';
 								the_post_thumbnail();
-								echo '</a>';
+								echo '</div>';
 								
 								
 							} else {
 								
-								echo '<a href="';
-								the_permalink();
-								echo '">';
+								echo '<div class="show' . $n_id . '">';
 								the_content();
-								echo '</a>';
+								echo '</div>';
 								
 							}
+							
 							?>
-							
-							<?php //the_title(); ?>
-							<?php //the_excerpt(); ?>
-							<?php the_content(); ?>
-
-							
+		
 						</div><!-- .border -->
-
+						<div style="font-size: 20px; color: #f00;"></div>
+						<div class="big<?php echo $n_id; ?>">
+						
+							<div class="next <?php echo $n_id; ?>"></div>
+							
+							<div class="prev <?php echo $n_id; ?>"></div>
+							
+							<?php the_post_thumbnail('single-post-thumbnail'); ?>
+							
+						</div><!-- .big -->
+						
+						<?php $n_id++; ?>
+												
+						<?php //echo $i; ?>
 						<?php endwhile; endif; ?>
 						<?php wp_reset_query(); ?>
 				</section><!-- #mediaclips -->

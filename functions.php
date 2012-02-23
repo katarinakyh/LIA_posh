@@ -15,8 +15,10 @@ add_theme_support( 'automatic-feed-links' );
 add_theme_support( 'post-thumbnails' );
 
 set_post_thumbnail_size( 256, 178, true ); // 300px width 200px height, hard crop mode
-add_image_size( 'single-post-thumbnail', 960, 9999 ); // Permalink thumbnail size
+add_image_size( 'single-post-thumbnail', 906, 640, false ); // Permalink thumbnail size
 add_image_size( 'medium', 630, 9999, false );
+add_image_size( 'large', 906, 640, true );
+
 
 // This theme supports editor styles
 /*add_editor_style("/css/layout-style.css");*/
