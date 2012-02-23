@@ -29,14 +29,18 @@
     <body>
     
         <div id="wrap">
-        
-            <div id="content-top"></div>
+        	
+        	
+        	
+            <div id="content-top" style="
+            <?php if(is_page_template('start.php')){ echo 'top: 952px;';}else{ echo 'top: 280px;';} ?>
+            "></div>
             
             <div id="main">
             
                 <header>
                                 
-                    <div id="logo"><a href="<?php get_bloginfo ( 'url' ); ?>"><h1>POSH<br />INDUSTRIES.</h1></a></div>
+                    <div id="logo"><a href="<?php bloginfo( 'url' ); ?>"><h1>POSH<br />INDUSTRIES.</h1></a></div>
                     
                     <div id="office">
                     <h4>OFFICE</h4>

@@ -26,16 +26,13 @@ $('document').ready(function(){
 
 
 	$('.next').click(function() {
-		alert('Well hello there!');
 		var z = $(this).attr('class').substring(4);
-		alert(z);
 		vertscroll(z,'next');
 	});
 
 	$('.prev').click(function() {
 		var z = $(this).attr('class').substring(4);
 		vertscroll(z,'prev');
-
 	});
 
 
