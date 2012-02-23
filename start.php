@@ -4,9 +4,9 @@ Template Name: Startsida
 */
 ?>
 <?php get_header(); ?>
-				
 				<section id="mediaclips">
-					
+					<div id="cover">
+					</div>				
 					<?php query_posts("cat=3&showposts=9"); ?>
 
 					<?php
@@ -33,18 +33,17 @@ Template Name: Startsida
 		
 						</div><!-- .border -->
 						<div style="font-size: 20px; color: #f00;"></div>
-						<div class="big" id="big<?php echo $n_id; ?>">
-						
-							<div class="next <?php echo $n_id; ?>"></div>
+							<div class="big" id="big<?php echo $n_id; ?>">
 							
-							<div class="prev <?php echo $n_id; ?>"></div>
-							
-							
-								<?php the_post_thumbnail('single-post-thumbnail'); ?>
-							
-							
-						</div><!-- .big -->
-						
+								<div class="next <?php echo $n_id; ?>"></div>
+								
+								<div class="prev <?php echo $n_id; ?>"></div>
+								
+								
+									<?php the_post_thumbnail('single-post-thumbnail'); ?>
+								
+								
+							</div><!-- .big -->
 						<?php $n_id++; ?>
 												
 						<?php //echo $i; ?>

@@ -205,20 +205,31 @@ header{
 #mediaclips {
     margin: 0 auto;
     width: @width;
+    z-index: 89;
     
 }
-
+#cover{
+  border-radius: @borderradius;
+  display:none;
+  position: absolute;
+  height: 640px;
+  width:906px;
+  background: #000;
+  margin-left: 24px;
+  z-index: 100;
+}
 .big {
   display: none;
   border-radius: @borderradius;
   height: 640px;
   width: 906px;
-  background: black;
+  background-color: black;
   position: absolute;
-  margin-left: 24px; 
+  margin-left: 24px;
+  z-index: 999; 
 }
 
-.big1 img, .big2 img, .big3 img, .big4 img, .big5 img, .big6 img, .big7 img, .big8 img, .big9 img {
+.big img{
   border-radius: @borderradius;
 }
 

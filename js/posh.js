@@ -1,21 +1,21 @@
 $('document').ready(function(){
 
-	var fadespeed = 300;
+	var fadespeed = 600;
 	var vertscroll = function(current,direction){
 		var next = parseInt(current) +1;
 		var prev = parseInt(current) -1;
-
+		
 		if(direction == 'next'){		
 			$('#big'+current).fadeOut(fadespeed);
-			$('.next '+current).fadeOut(fadespeed);
+			$('.next '+current).hide();
 			if(current == 9){
 				next = 1;
 			}
-			$('#big'+next).fadeIn(fadespeed);		
-
+			$('#big'+next).fadeIn(fadespeed);
+	
 		}else if (direction == 'prev'){
 			$('#big'+current).fadeOut(fadespeed);
-			$('.prev '+current).fadeOut(fadespeed);
+			$('.prev '+current).hide();
 			if (current == 1) {
 				prev = 9;
 			}
@@ -24,19 +24,27 @@ $('document').ready(function(){
 	}
 
 	var showIt = function(which){
-		$('#big'+which).slideToggle(fadespeed);
+		$('#big'+which).fadeIn(fadespeed);
+		$('#cover').show();
+	}
+	
+	var hideIt = function(which){
+		$('#big'+which).fadeOut(fadespeed);
+		$('#cover').hide();
 	}
 
 
 /*---------- event listeners--------------------------*/
 
-	$('.next').click(function() {
-		var z = $(this).attr('class').substring(4);
+	$('.next').click(function(e) {
+		e.stopPropagation();
+		var z = $(this).attr('class').substring(5);
 		vertscroll(z,'next');
 	});
 
-	$('.prev').click(function() {
-		var z = $(this).attr('class').substring(4);
+	$('.prev').click(function(e) {
+		e.stopPropagation();
+		var z = $(this).attr('class').substring(5);
 		vertscroll(z,'prev');
 	});
 
@@ -47,7 +55,7 @@ $('document').ready(function(){
 	
 	$('.big').click(function(){
 		var z = $(this).attr('id').substring(3);
-		showIt(z);
+		hideIt(z);
 	});
 	
 
