@@ -1,53 +1,10 @@
 <?php get_header(); ?>
 				
-				<section id="mediaclips">
-				
-					<?php query_posts("cat=3&showposts=10"); ?>
-					
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			
-					<!--<a href="<?php //the_permalink() ?>">
-					
-						
-					</a>-->
-
-					<div class="border">
-						<?php
-						if(has_post_thumbnail()) {
-						
-							the_post_thumbnail();
-							
-						} else {
-							
-							echo 'Banana!';
-							
-						}
-						?>
-						
-						<?php //the_title(); ?>
-						<?php //the_excerpt(); ?>
-						
-					</div><!-- .border -->
-
-					<?php endwhile; endif; ?>
-					<?php wp_reset_query(); ?>
-				
-					<div class="border"> <div class="img"> </div> </div>
-					<div class="border"> <div class="img"> </div> </div>
-					<div class="border"> <div class="img"> </div> </div>
-					<div class="border"> <div class="img"> </div> </div>
-					<div class="border"> <div class="img"> </div> </div>
-					<div class="border"> <div class="img"> </div> </div>
-					<div class="border"> <div class="img"> </div> </div>
-					<div class="border"> <div class="img"> </div> </div>
-					
-				</section>
-				
-				<div id="content-wrap">
+				<div id="content-wrap-start">
 				
 					<section id="content">
-					
-						<article>
+						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+						<article class="post">
 						
 							<h2>About</h2>
 							

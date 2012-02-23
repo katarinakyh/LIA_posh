@@ -1,13 +1,13 @@
 						<section id="contact">
 				
-							<address>
+							<div class="column">
 								<h2>CONTACT</h2>
-								<p>
+								<address>
 			                    Drachmannsgatan 21<br />
 			                    SE-168 49 Stockholm, Sweden<br />
 			                    info@posh.se
-			                    </p>
-							</address>
+			                    </address>
+							</div>
 							
 							<div id="jenni">								
 								<p>

@@ -5,7 +5,6 @@ Template Name: Startsida
 ?>
 <?php get_header(); ?>
 				
-
 				<section id="mediaclips">
 					
 					<?php query_posts("cat=3&showposts=9"); ?>
@@ -20,23 +19,15 @@ Template Name: Startsida
 										
 						<div class="border">
 						
-							<?php
-							
+							<?php							
 							
 							if(has_post_thumbnail()) {						
 								
 								echo '<div class="show' . $n_id . '">';
 								the_post_thumbnail();
-								echo '</div>';
+								echo '</div>';								
 								
-								
-							} else {
-								
-								echo '<div class="show' . $n_id . '">';
-								the_content();
-								echo '</div>';
-								
-							}
+							} 
 							
 							?>
 		
@@ -48,7 +39,9 @@ Template Name: Startsida
 							
 							<div class="prev <?php echo $n_id; ?>"></div>
 							
-							<?php the_post_thumbnail('single-post-thumbnail'); ?>
+							
+								<?php the_post_thumbnail('single-post-thumbnail'); ?>
+							
 							
 						</div><!-- .big -->
 						
@@ -59,7 +52,7 @@ Template Name: Startsida
 						<?php wp_reset_query(); ?>
 				</section><!-- #mediaclips -->
 				
-				<div id="content-wrap">
+				<div id="content-wrap-start">
 				
 					<section id="content">
 					
