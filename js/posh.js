@@ -36,6 +36,7 @@ $('document').ready(function(){
 	var hideIt = function(which){
 		$('#big'+which).fadeOut(fadespeed);
 		$('#cover').hide();
+		bigbox = false;
 	}
 	var keyscroll = function (e){
 
@@ -77,7 +78,6 @@ $('document').ready(function(){
 	
 	$('.big').click(function(){
 		var z = $(this).attr('id').substring(3);
-		bigbox = false;
 		hideIt(z);
 	});
 	
