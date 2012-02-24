@@ -1,6 +1,9 @@
 $('document').ready(function(){
 
-	var fadespeed = 600;
+	var fadespeed = 300,
+		bigbox = false,
+		currentBigbox;
+		
 	var vertscroll = function(current,direction){
 		var next = parseInt(current) +1;
 		var prev = parseInt(current) -1;
@@ -12,6 +15,7 @@ $('document').ready(function(){
 				next = 1;
 			}
 			$('#big'+next).fadeIn(fadespeed);
+			currentBigbox = next;
 	
 		}else if (direction == 'prev'){
 			$('#big'+current).fadeOut(fadespeed);
@@ -20,6 +24,7 @@ $('document').ready(function(){
 				prev = 9;
 			}
 			$('#big'+prev).fadeIn(fadespeed);
+			currentBigbox = prev;
 		}
 	}
 
@@ -32,6 +37,21 @@ $('document').ready(function(){
 		$('#big'+which).fadeOut(fadespeed);
 		$('#cover').hide();
 	}
+	var keyscroll = function (e){
+
+		var unicode=e.keyCode? e.keyCode : e.charCode
+		if(bigbox == true){
+			if(unicode == 39){
+				vertscroll(currentBigbox, 'next'); 
+			}else if(unicode == 37){
+				vertscroll(currentBigbox, 'prev');
+			}else if(unicode == 27){
+				hideIt(currentBigbox);
+			}
+		}
+		//alert(unicode)
+	}
+	
 
 
 /*---------- event listeners--------------------------*/
@@ -50,13 +70,20 @@ $('document').ready(function(){
 
 	$('.shw').click(function() {
 		var z = $(this).attr('class').substring(4);
+		currentBigbox = z;
+		bigbox = true;
 		showIt(z);
 	});
 	
 	$('.big').click(function(){
 		var z = $(this).attr('id').substring(3);
+		bigbox = false;
 		hideIt(z);
 	});
 	
+	$('body').keyup(function(event){
+		//alert('kk');
+		keyscroll(event)
+	});
 
 });
