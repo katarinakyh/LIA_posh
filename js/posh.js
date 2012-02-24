@@ -38,10 +38,11 @@ $('document').ready(function(){
 		$('#cover').hide();
 		bigbox = false;
 	}
+	
 	var keyscroll = function (e){
 
 		var unicode=e.keyCode? e.keyCode : e.charCode
-		if(bigbox == true){
+		if(bigbox){
 			if(unicode == 39){
 				vertscroll(currentBigbox, 'next'); 
 			}else if(unicode == 37){
