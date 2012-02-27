@@ -64,13 +64,9 @@
 		</div><!-- #wrap -->
 		
 	  	<script type="text/javascript" src="<?php echo bloginfo('template_url'); ?>/js/jquery-1.7.min.js"></script>
-		<script type="text/javascript" src="<?php echo bloginfo('template_url'); ?>/js/less-1.2.1.min.js"></script>
-		<script type="text/javascript" src="<?php echo bloginfo('template_url'); ?>/js/html5.js"></script>
 		<script type="text/javascript" src="<?php echo bloginfo('template_url'); ?>/js/posh.js"></script>
 				
-	  	<!--[if lte IE 8]>
-			<script type="text/javascript" src="js/html5.js"></script>
-		<![endif]-->
+
 	
 		<?php wp_footer(); ?>
 		

@@ -9,18 +9,18 @@
   
   	<meta name="description" content="<?php echo bloginfo('description'); ?>" />
  
-	<link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/style.css" type="text/css" media="screen" />
-	<link rel="stylesheet/less" href="<?php echo bloginfo('template_url'); ?>/styles.less" type="text/css" media="screen" />
+ 	<!--[if lte IE 8]>
+		<script type="text/javascript" src="<?php echo bloginfo('template_url'); ?>/js/html5.js"></script>
+	<![endif]-->
+ 
+
+	<link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/styles.css" type="text/css" media="screen" />	
+
 	
 	<link rel="shortcut icon" href="<?php echo bloginfo('template_url'); ?>/img/favicon.png" />
   	<link rel="apple-touch-icon" sizes="72x72" href="img/apple_touch_57px.png" />
   	<link rel="apple-touch-icon" sizes="114x114" href="img/apple_touch_114px.png" />
 	
-	<!--[if !IE 7]>
-		<style type="text/css">
-			#wrap {display:table;height:100%}
-		</style>
-	<![endif]-->
 	
 	<?php wp_head(); ?>
 		  	
@@ -40,7 +40,7 @@
             
                 <header>
                                 
-                    <div id="logo"><a href="<?php bloginfo( 'url' ); ?>"><h1>POSH<br />INDUSTRIES.</h1></a></div>
+                    <div id="logo"><a href="<?php bloginfo( 'url' ); ?>"><img src="<?php echo bloginfo('template_url'); ?>/img/posh_logo.png" /></a></div>
                     
                     <div id="office">
                     <h4>OFFICE</h4>
