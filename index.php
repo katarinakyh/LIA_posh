@@ -26,7 +26,9 @@
       						<small><?php the_date(); ?></small>
 							
 							<?php the_excerpt(); ?>
-							<?php wp_list_categories( $args ); ?> 
+							
+							<?php the_category(', '); ?>
+							
 							<a href="<?php the_permalink() ?>"> Läs mer</a>
 									
 						</article><!-- .list-post -->						

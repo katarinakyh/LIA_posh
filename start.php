@@ -24,7 +24,7 @@ Template Name: Startsida
 							if(has_post_thumbnail()) {						
 								
 								echo '<div class="shw ' . $n_id . '">';
-								the_post_thumbnail();
+								the_post_thumbnail('gallery');
 								echo '</div>';								
 								
 							} 
@@ -46,8 +46,8 @@ Template Name: Startsida
 									
 								} else {
 								
-									the_post_thumbnail('single-post-thumbnail'); ?>
-								<div class="imagecaption" style="height:auto; width: 100%; background:#000;margin-top:-8px;border-radius: 15px;color:#fff;padding:8px;">
+									the_post_thumbnail('zoom'); ?>
+								<div class="imagecaption">
 									<?php the_excerpt(); ?>
 									<a href="<?php the_permalink() ?>"> Läs mer</a>
 								</div>

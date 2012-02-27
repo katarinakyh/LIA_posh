@@ -1,4 +1,9 @@
 <?php
+// Change lenght of excerpt
+function custom_excerpt_length( $length ) {
+	return 26;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 /*
 register_nav_menus( array(
@@ -14,9 +19,11 @@ add_theme_support( 'automatic-feed-links' );
 // This theme uses post thumbnails
 add_theme_support( 'post-thumbnails' );
 
-set_post_thumbnail_size( 256, 178, true ); // 300px width 200px height, hard crop mode
-add_image_size( 'single-post-thumbnail', 906, 640, false ); // Permalink thumbnail size
-add_image_size( 'medium', 582, 9999, false );
+add_image_size( 'small', 150, 150, true );
+add_image_size( 'gallery', 256, 178, true );
+add_image_size( 'zoom', 906, 640, false );
+add_image_size( 'single-post-thumbnail', 655, 9999, false );
+
 
 
 // This theme supports editor styles

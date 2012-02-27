@@ -6,6 +6,8 @@
 				
 					<section id="content">
 					
+						<?php get_sidebar(); ?>
+					
 						<?php while (have_posts()) : the_post(); ?>
 						
 						<article class="list-post" style="background:url('<?php 
