@@ -81,6 +81,12 @@ $('document').ready(function(){
 		var z = $(this).attr('id').substring(3);
 		hideIt(z);
 	});
+
+	$('.close').click(function(){
+		var where = $(this).parent();
+		var z= where.attr('id').substring(3);
+		hideIt(z);
+	});
 	
 	$('body').keyup(function(event){
 		keyscroll(event)
