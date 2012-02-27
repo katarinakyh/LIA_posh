@@ -82,7 +82,6 @@ $('document').ready(function(){
 	});
 	
 	$('body').keyup(function(event){
-		//alert('kk');
 		keyscroll(event)
 	});
 

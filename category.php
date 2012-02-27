@@ -1,6 +1,4 @@
 <?php get_header(); ?>
-
-				<?php query_posts("cat=*"); ?>
 				
 				<?php if (have_posts()): ?>
 				
@@ -30,6 +28,7 @@
 						</article><!-- .list-post -->						
 						
 					<?php endwhile;?>
+					
 					<?php endif; ?>		
 
 <?php get_footer(); ?>
