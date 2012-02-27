@@ -43,5 +43,5 @@
 						<?php comments_template( '', true ); ?>						
 					<?php endwhile;?>
 					<?php endif; ?>		
-		<div style="clear:both"></div>
+		
 <?php get_footer(); ?>

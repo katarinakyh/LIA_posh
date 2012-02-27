@@ -1,4 +1,13 @@
-<?php
+<html>
+<head>
+<style type="text/css">
+
+element {
+}
+
+</style>
+</head>
+</html><?php
 /*
 Template Name: Startsida
 */
@@ -7,10 +16,10 @@ Template Name: Startsida
 				<section id="mediaclips">
 					<div id="cover">
 					</div>				
-					<?php query_posts("cat=3&showposts=9"); ?>
+					<?php query_posts("cat=3,11&showposts=9"); ?>
 
 					<?php
-					
+						
 						$n_id = 1;
 
 						if (have_posts()) : while (have_posts()) : the_post(); 
@@ -35,25 +44,36 @@ Template Name: Startsida
 						<div style="font-size: 20px; color: #f00;"></div>
 							<div class="big" id="big<?php echo $n_id; ?>">
 							
-								<div class="close <?php echo $n_id; ?>"></div>
-							
+								<div class="close <?php echo $n_id; ?>"></div>				
 								<div class="next <?php echo $n_id; ?>"></div>
 								<div class="prev <?php echo $n_id; ?>"></div>
 								
-								<?php if(preg_match('#http://www\.youtube\.com/v/([^&"\'? ]*)#', the_content() ,$match) ) {
-									
-									the_excerpt();
-									
-								} else {
+								<?php 
 								
-									the_post_thumbnail('zoom'); ?>
+								
+								
+								if(in_category(11)) {
+									
+									the_content();
+								 	
+								
+								} else if(in_category(3)) {
+								
+									the_post_thumbnail('zoom'); 
+								
+								}
+								
+								
+									
+								?>
+								
 								<div class="imagecaption">
 									<?php the_excerpt(); ?>
 									<a href="<?php the_permalink() ?>"> Läs mer</a>
 								</div>
 																
 							</div><!-- .big -->
-						<?php } ?>
+						
 						<?php $n_id++; ?>
 												
 						<?php //echo $i; ?>
