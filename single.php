@@ -6,6 +6,8 @@
 				
 					<section id="content">
 					
+						<?php get_sidebar(); ?>
+					
 						<?php while (have_posts()) : the_post(); ?>
 					<nav id="nav-single">
 						<span class="nav-previous"><?php previous_post_link( '%link', __( '<span class="meta-nav">&larr;</span> Previous', 'twentyeleven' ) ); ?></span>

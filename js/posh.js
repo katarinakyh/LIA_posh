@@ -88,6 +88,12 @@ $('document').ready(function(){
 		hideIt(z);
 	});
 	
+	$('.close').click(function(){
+		var where = $(this).parent();
+		var z = where.attr('id').substring(3);
+		hideIt(z);
+	});
+	
 	$('body').keyup(function(event){
 		keyscroll(event)
 	});

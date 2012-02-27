@@ -35,16 +35,25 @@ Template Name: Startsida
 						<div style="font-size: 20px; color: #f00;"></div>
 							<div class="big" id="big<?php echo $n_id; ?>">
 							
+								<div class="close <?php echo $n_id; ?>"></div>
+							
 								<div class="next <?php echo $n_id; ?>"></div>
 								<div class="prev <?php echo $n_id; ?>"></div>
 								
+								<?php if(preg_match('#http://www\.youtube\.com/v/([^&"\'? ]*)#', the_content() ,$match) ) {
+									
+									the_excerpt();
+									
+								} else {
 								
-								<?php the_post_thumbnail('single-post-thumbnail'); ?>
+									the_post_thumbnail('single-post-thumbnail'); ?>
 								<div class="imagecaption" style="height:auto; width: 100%; background:#000;margin-top:-8px;border-radius: 15px;color:#fff;padding:8px;">
 									<?php the_excerpt(); ?>
 									<a href="<?php the_permalink() ?>"> Läs mer</a>
 								</div>
+																
 							</div><!-- .big -->
+						<?php } ?>
 						<?php $n_id++; ?>
 												
 						<?php //echo $i; ?>
